@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Põe & Pega</title>
+</head>
+<body>
+
+    <div class="app-container">
+
+        <header>
+            <h1>Põe & Pega</h1><h1 id="mjp">MJprojetos™</h1>
+        </header>
+
+        <main>
+
+            <div id="app"></div>
+
+            <button id="novaCategoria">
+                + Adicionar Categoria
+            </button>
+
+            <div class="acoes-arquivo">
+
+<div class="acoes-arquivo">
+
+    <button id="exportar">
+        💾 Exportar
+    </button>
+
+    <button id="importar">
+        📂 Importar
+    </button>
+
+</div>
+
+            </div>
+
+            <input
+                type="file"
+                id="arquivoImportacao"
+                accept=".json"
+                style="display:none;"
+            >
+    
+            <div class="painel-historico">
+
+    <div class="topo-historico">
+
+        <button id="btnHistorico">
+            ▶
+        </button>
+
+        <h2>Histórico</h2>
+
+        <button id="btnLimparHistorico">
+            🧹
+        </button>
+
+    </div>
+
+    <div id="historico"></div>
+
+</div>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+
+    <script>
+        eruda.init();
+    </script>
+
+</body>
+</html>

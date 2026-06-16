@@ -1,0 +1,450 @@
+/* ===== GERAL ===== */
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Arial, sans-serif;
+
+    background:#1a1a1a;
+    color:#f0f0f0;
+
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    padding:20px;
+}
+
+/* ===== APP MOBILE NO PC ===== */
+
+#app,
+#historico,
+h1,
+h2,
+#novaCategoria,
+#exportar,
+#importar{
+    width:100%;
+    max-width:480px;
+}
+
+h1{
+    text-align:center;
+    
+    font-size: 20px;
+
+    margin-bottom:0px;
+
+    color:#f0d060;
+
+    letter-spacing:2px;
+}
+
+#mjp{
+    font-size: 10px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+/* ===== BOTÕES GERAIS ===== */
+
+button{
+    border:none;
+
+    border-radius:10px;
+
+    padding:12px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:0.2s;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+/* ===== BOTÃO NOVA CATEGORIA ===== */
+
+#novaCategoria{
+    background:#7E8C54;
+
+    color:#111;
+
+    margin-top:10px;
+}
+
+/* ===== IMPORTAR / EXPORTAR ===== */
+
+#exportar,
+#importar{
+    margin-top:10px;
+
+    background:#333;
+
+    color:#f0d060;
+}
+
+/* ===== CATEGORIA ===== */
+
+.categoria{
+
+    background:#2b2b2b;
+
+    border:2px solid #7E8C54;
+
+    border-radius:16px;
+
+    padding:15px;
+
+    margin-bottom:15px;
+
+    box-shadow:
+    0 4px 12px rgba(0,0,0,0.25);
+}
+
+/* ===== TOPO ===== */
+
+.topo-categoria{
+    
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:12px;
+}
+
+.btn-expandir{
+
+    background:#444;
+
+    color:white;
+
+    width:40px;
+    height:40px;
+}
+
+.nome-categoria{
+
+    text-align: center;
+    
+    flex:1;
+
+    border:none;
+
+    border-radius:10px;
+
+    padding:10px;
+
+    background:#3a3a3a;
+
+    color:white;
+
+    font-size:1.1rem;
+}
+
+.btn-excluir-categoria{
+
+    background:#8b3030;
+
+    color:white;
+
+    width:40px;
+    height:40px;
+}
+
+/* ===== ELEMENTOS ===== */
+
+.elemento{
+    
+    display:flex;
+
+    gap:8px;
+
+    margin-bottom:8px;
+}
+
+.elemento input{
+
+    flex:1;
+
+    padding:10px;
+    
+    border: solid 2px #f0d060;
+
+    border-radius:10px;
+
+    background:#3a3a3a;
+
+    color:white;
+}
+
+.elemento select{
+
+    width:65px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#4a4a4a;
+
+    color:white;
+}
+
+.btn-excluir-elemento{
+
+    width:40px;
+
+    background:#8b3030;
+
+    color:white;
+}
+
+/* ===== ADICIONAR ELEMENTO ===== */
+
+.btn-elemento{
+
+    width:100%;
+
+    background:#f0d060;
+
+    color:#111;
+
+    margin-top:8px;
+}
+
+/* ===== ÁREA DE SORTEIO ===== */
+
+.btn-sortear{
+
+    width:100%;
+
+    margin-top:10px;
+
+    background:#f0d060;
+
+    color:#111;
+
+    font-size:1rem;
+}
+
+/* ===== RESULTADO ===== */
+
+.resultado{
+
+    margin-top:10px;
+
+    background:#3a3a3a;
+
+    border:2px solid #f0d060;
+
+    border-radius:12px;
+
+    padding:12px;
+
+    text-align:center;
+
+    font-size:1.2rem;
+
+    font-weight:bold;
+
+    color:#f0d060;
+
+    min-height:48px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+}
+
+/* ===== HISTÓRICO ===== */
+
+h2{
+    font-family:
+        Consolas,
+        "Courier New",
+        monospace;
+    text-align: center;
+    font-size: 18px;
+    /*padding:15px;*/
+    color:#f0f0f0;
+}
+
+.painel-historico{
+    margin-top: 20px;
+    background: #2b2b2b;
+    border: 2px solid #4a4a4a;
+    border-radius: 10px;
+}
+
+#historico{
+
+    text-align: center;
+    
+    padding:10px;
+
+    max-height:250px;
+
+    overflow-y:auto;
+}
+
+.item-historico{
+
+    font-family:
+        Consolas,
+        "Courier New",
+        monospace;
+
+    padding:10px;
+
+    margin-bottom:8px;
+
+    border-radius:8px;
+    
+    letter-spacing:0.5px;
+}
+
+.topo-historico{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:10px;
+
+}
+
+#btnHistorico{
+
+    width:40px;
+
+    height:40px;
+
+    background:#444;
+
+    color:white;
+
+}
+
+#btnLimparHistorico{
+
+    width:40px;
+
+    height:40px;
+
+    background:#8b3030;
+
+    color:white;
+
+}
+
+/* ===== SCROLL ===== */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#666;
+    border-radius:10px;
+}
+
+/* ===== DESKTOP ===== */
+
+@media(min-width:700px){
+
+    body{
+
+        background:
+        linear-gradient(
+            180deg,
+            #111,
+            #222
+        );
+    }
+
+    #app,
+    #historico,
+    h1,
+    h2,
+    #novaCategoria,
+    #exportar,
+    #importar{
+
+        max-width:450px;
+    }
+
+}
+
+.area-sorteio{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-top:10px;
+
+    align-items:stretch;
+
+}
+
+.btn-sortear{
+
+    flex:1;
+    
+    margin-top:0;
+    
+    color: #f0d060;
+
+    background:#3a3a3a;
+
+    border:2px solid #f0d060;
+
+}
+
+.resultado{
+
+    flex:1;
+
+    margin-top:0;
+
+    min-height:50px;
+}
+
+.acoes-arquivo{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-top:10px;
+
+    width:100%;
+
+    max-width:480px;
+
+}
+
+#exportar,
+#importar{
+
+    flex:1;
+
+    margin-top:0;
+
+}
